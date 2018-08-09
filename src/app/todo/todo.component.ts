@@ -1,11 +1,37 @@
+import { slideIn, moveDown, slideOut } from './../animations';
 import { Component, ViewEncapsulation } from '@angular/core';
+import { trigger, transition, useAnimation, stagger, animateChild, query, group } from '@angular/animations';
 
 @Component({
   selector: 'todo',
   encapsulation: ViewEncapsulation.None,
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss'],
- 
+  animations: [
+    trigger('todoAnimations', [
+      transition(':enter', [
+        group([
+          query('h1', [
+            useAnimation(moveDown)
+          ]),
+          query('input', [
+            useAnimation(moveDown)
+          ]),
+          query('@todoItem',
+            stagger(100, animateChild()))
+        ])
+      ])
+    ]),
+
+    trigger('todoItem', [
+      transition(':enter', [
+        useAnimation(slideIn),
+      ]),
+      transition(':leave', [
+        useAnimation(slideOut)
+      ]),
+    ])
+  ]
 })
 
 export class TodoComponent {
