@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.new-todo-input, .todo {
+  padding: 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.new-todo-input {
+  margin: 25px 0;
+  height: 50px;
+}
+
+.todo {
+  display: flex;
+  // justify-content: space-between;
+  padding: 0 20%;
+  align-content: center;
+
+  height: 50px;
+  background: none;
+  border: none;
+  border-radius: 0;
+  color: white;
+  overflow: hidden;
+  transition: 125ms ease background-color;
+
+  &:hover {
+    background-image: none;
+    color: hsl(0, 90%, 56%);
+  }
+
+  span:hover {
+    text-decoration: line-through;
+  }
+}
+
+$todos: 45;
+@for $i from 1 through $todos {
+  .todo:nth-last-child(#{$i}n) {
+    background-color: hsl((360deg / $todos * $i), 75%, 75%);
+  }
+}
+
+.finished-list {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+}

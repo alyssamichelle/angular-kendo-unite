@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonControlPanelComponent } from './button-control-panel/button-control-panel.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonControlPanelComponent
+    ButtonControlPanelComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

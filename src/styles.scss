@@ -8,3 +8,9 @@ $button-text: #ff69b4;
 .k-button.k-bare, .k-button.k-bare:hover {
   color: $button-text;
 }
+
+body {
+  margin: 0;
+  padding: 50px;
+  font: 18px sans-serif;
+}
