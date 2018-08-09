@@ -12,11 +12,6 @@ export class TodoComponent {
 
   public initDueTime: Date = new Date(2019, 3, 10, 10, 30, 0);
 
-
-  getRandomNumberWithinReason(max, min = 1){
-    return Math.ceil(Math.random() * (max - min) + min);
-  };
-
   todos = [
     {
       item: 'Take dog to vet',
