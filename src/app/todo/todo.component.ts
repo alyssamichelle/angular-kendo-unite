@@ -1,4 +1,4 @@
-import { slideIn, moveDown, slideOut } from './../animations';
+import { slideIn, moveDown, slideOut, fadeIn, fadeOut } from './../animations';
 import { Component, ViewEncapsulation } from '@angular/core';
 import { trigger, transition, useAnimation, stagger, animateChild, query, group } from '@angular/animations';
 
@@ -8,6 +8,16 @@ import { trigger, transition, useAnimation, stagger, animateChild, query, group 
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss'],
   animations: [
+
+    trigger('fade', [
+      transition(':enter', [
+        useAnimation(fadeIn)
+      ]),
+      transition(':leave', [
+        useAnimation(fadeOut)
+      ])
+    ]),
+    
     trigger('todoAnimations', [
       transition(':enter', [
         group([
@@ -36,42 +46,38 @@ import { trigger, transition, useAnimation, stagger, animateChild, query, group 
 
 export class TodoComponent {
 
-  public initDueTime: Date = new Date(2019, 3, 10, 10, 30, 0);
-
-
-  getRandomNumberWithinReason(max, min = 1){
-    return Math.ceil(Math.random() * (max - min) + min);
-  };
+  // public initDueTime: Date = new Date(2019, 3, 10, 10, 30, 0);
 
   todos = [
     {
       item: 'Take dog to vet',
-      due: new Date(2019, 3, 10, 2, 30, 0)
+      // due: new Date(2019, 3, 10, 2, 30, 0)
     },
     {
       item: 'Get oil change',
-      due: new Date(2019, 3, 10, 2, 30, 0)
+      // due: new Date(2019, 3, 10, 2, 30, 0)
     },
     {
       item: 'Finish super hard puzzle',
-      due: new Date(2019, 3, 10, 2, 30, 0)
+      // due: new Date(2019, 3, 10, 2, 30, 0)
     },
     {
       item: 'Pack for Denver',
-      due: new Date(2019, 3, 10, 3, 30, 0)
+      // due: new Date(2019, 3, 10, 3, 30, 0)
     },
     {
       item: 'Create to-do app',
-      due: new Date(2019, 3, 10, 1, 30, 0)
+      // due: new Date(2019, 3, 10, 1, 30, 0)
     }
   ];
 
   addTodo(input: HTMLInputElement) {
-    this.todos = [{ item: input.value, due: this.initDueTime }, ...this.todos];
+    // this.todos = [{ item: input.value, due: this.initDueTime }, ...this.todos];
+    this.todos = [{ item: input.value }, ...this.todos];
     input.value = '';
   }
 
-  removeTodo(todo, i) {
+  removeTodo(i) {
     this.todos.splice(i, 1);
   }
 }

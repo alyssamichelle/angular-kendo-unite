@@ -5,7 +5,7 @@
   <div *ngIf="todos" class="list-group">
     <button kendoButton type="button" class="todo" @todoItem
       *ngFor="let todo of todos; index as i">
-      <span (click)="removeTodo(todo, i)">{{todo.item}}</span>
+      <span (click)="removeTodo(i)">{{todo.item}}</span>
     </button>
   </div>
   <div *ngIf="todos.length == 0" @fade class="finished-list">Fin</div>

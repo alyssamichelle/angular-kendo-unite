@@ -40,4 +40,14 @@ export let slideOut = animation([
   ]))
 ]);
 
+export let fadeIn = animation([
+  style({ opacity: 0 }),
+  animate(1000)
+]);
+
+export let fadeOut = animation([
+  animate(250, style({
+    opacity: 0
+  }))
+]);
 
