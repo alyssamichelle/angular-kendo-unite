@@ -6,6 +6,8 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonControlPanelComponent } from './button-control-panel/button-control-panel.component';
 import { TodoComponent } from './todo/todo.component';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { TodoComponent } from './todo/todo.component';
   imports: [
     BrowserModule,
     ButtonsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DateInputsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
