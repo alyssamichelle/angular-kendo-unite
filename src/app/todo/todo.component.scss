@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400');
 
+.todo-comp-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-list-wrapper {
+  width: 60%
+}
+
+kendo-chart {
+  width: 35%
+}
+
 h1 {
   margin: 0;
   text-transform: uppercase;
