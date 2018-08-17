@@ -10,7 +10,6 @@ import { TodoComponent } from './todo/todo.component';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import 'hammerjs';
-import { KendoDataQueryComponent } from './kendo-data-query/kendo-data-query.component';
 
 
 
@@ -20,8 +19,7 @@ import { KendoDataQueryComponent } from './kendo-data-query/kendo-data-query.com
     AppComponent,
     ButtonControlPanelComponent,
     TodoComponent,
-    HourPipe,
-    KendoDataQueryComponent
+    HourPipe
   ],
   imports: [
     BrowserModule,

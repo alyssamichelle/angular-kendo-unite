@@ -93,7 +93,7 @@ export class TodoComponent {
     {
       item: 'Take dog to vet',
       due: new Date(2019, 3, 10, 1, 10, 0),
-      hour: this.hour.transform(new Date(2019, 3, 10, 1, 10, 0)))
+      hour: this.hour.transform(new Date(2019, 3, 10, 1, 10, 0))
     },
     {
       item: 'Get oil change',
@@ -141,7 +141,8 @@ export class TodoComponent {
     if(!todos) return null;
     this.hourlyTodos = groupBy(this.todos, [{ field: "hour" }]);
     
-    for (let group: GroupResult of this.hourlyTodos) {
+    // Humanizing the category field!!
+    for (let group of this.hourlyTodos) {
       // turn the todos into 12 hr clock, not 24
       let hour: number = 12;
       if (group.value % 12 != 0) {
@@ -155,7 +156,7 @@ export class TodoComponent {
       }
     }
 
-    // sort the hourlyTodos in order by hour
+    // Sort the hourlyTodos in order by hour
     this.hourlyTodos.sort((a, b) => {
       if (a.value < b.value) {
         return -1;
