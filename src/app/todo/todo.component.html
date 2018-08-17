@@ -18,17 +18,18 @@
     <div *ngIf="todos.length == 0" @fade class="finished-list">Fin</div>
   </div>
 
-  <kendo-chart>
-    <kendo-chart-title text="Busiest time of day"></kendo-chart-title>
-    <kendo-chart-series>
-      <kendo-chart-series-item
-        [data]="hourlyTodos" 
-        [name]="field" 
-        field="items.length" 
-        categoryField="humanizedValue"
-        type="column">
-      </kendo-chart-series-item>
-    </kendo-chart-series>
-  </kendo-chart>
+   <kendo-chart>
+     <kendo-chart-title text="Busiest time of day"></kendo-chart-title>
+     
+     <kendo-chart-series>
+       <kendo-chart-series-item
+         [data]="hourlyTodos"
+         [name]="field"
+         field="items.length"
+         categoryField="humanizedValue"
+         type="column">
+       </kendo-chart-series-item>
+     </kendo-chart-series>
+   </kendo-chart>
 
 </div>
