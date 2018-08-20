@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+# Video 1: 📽️ Getting started with Angular & Kendo UI 
+
+To really understand just how easy it is to create with Angular and Kendo UI, we’ll start building out a project by first using the Angular CLI. In this first episode, we install the CLI, generate our Angular app, Install Kendo Buttons and include them in our app!
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
