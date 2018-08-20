@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+# Video 5: 📽️ Adding Custom Angular Animations to our to-do app 
+
+Our to-do app is functional with the ability to add and remove to-do items to the to-do list. We are using Kendo UI buttons and a textbox input to make this UI happen & it’s looking pretty good with our custom styles easily modifying the Kendo components. The only thing that is missing in the UX is motion! Some animations would really snazzify our app while providing useful feedback as well as a spatial mental model to our users. Let’s do this!
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
