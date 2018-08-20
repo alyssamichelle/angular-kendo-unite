@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+# Video 3: 📽️ Theming with Style 
+
+Our Buttons are looking pretty good as is. But what if we wanted to customize them? Where would we even begin? Find out the answers to these questions, along with other input related ones in this third video of the Angular and Kendo UI Unite series.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
