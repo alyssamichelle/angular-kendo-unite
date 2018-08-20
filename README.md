@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+# Video 7: 📽️ Charting our busiest time of day with Kendo UI Charts! 
+
+The final touch to our to-do app is to add a chart showing us our busiest time of day. We will use our to-do data, make a custom pipe that will return just the number from the todo due time, and then chart the hours in our day to see when is the busiest!
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
