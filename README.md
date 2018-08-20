@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+
+# Video 6: 📽️ Finishing our to-do app with Kendo UI Timepicker 
+
+Our to-do app is looking great using Kendo UI components & custom Angular animations. However, each to-do item could benefit by having a time assigned. We easily accomplish this by adding the Kendo UI timepicker in this episode of Angular & Kendo UI Unite!
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
