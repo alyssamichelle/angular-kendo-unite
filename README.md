@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+
+# Video 2: 📽️ All you could ever want to know about THE BUTTON 
+
+We were able to get our Angular app generated, include Kendo in the app and get our first button working. There are so many MANY more options when it comes to buttons in Kendo UI, however. This video will show the black belt ways of the button.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
