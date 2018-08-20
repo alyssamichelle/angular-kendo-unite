@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
+
+# Video 4: 📽️ A Snazzy to-do app using Kendo UI 
+
+What is a button without a form? What is a to-do list without to-do items? We will answer these philosophical questions, along with other form related ones in this third video of the Angular and Kendo Unite series.
+
+We start with a to-do app using our marvelous Kendo UI Buttons as individual to-do items. We then add in the Kendo UI textbox input and get our to-do app fully functioning! 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
