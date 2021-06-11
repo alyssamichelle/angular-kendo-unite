@@ -1,5 +1,7 @@
 import { Pipe, PipeTransform } from "../../node_modules/@angular/core";
+import { Injectable } from "@angular/core";
 
+@Injectable()
 @Pipe({
   name: 'hour'
 })
